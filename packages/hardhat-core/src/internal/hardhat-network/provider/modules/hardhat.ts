@@ -135,6 +135,7 @@ export class HardhatModule {
   private _addCompilationResultParams(
     params: any[]
   ): [string, CompilerInput, CompilerOutput] {
+    // @ts-expect-error
     return validateParams(
       params,
       t.string,

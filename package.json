@@ -9,8 +9,7 @@
     "@types/bn.js": "^5.1.0"
 },
 "workspaces": [
-    "packages/*",
-    "docs"
+    "packages/*"
   ],
   "devDependencies": {
     "@changesets/cli": "^2.16.0",

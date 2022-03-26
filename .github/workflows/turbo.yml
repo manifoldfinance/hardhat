@@ -15,14 +15,11 @@ jobs:
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn install
+      - run: ./ci.sh
         id: install
 
       - run: npm i -g lerna
         id: lerna
-
-      - run: npx turbo run build
-        id: turbo
 
       - run: lerna exec npm pack
         id: pack

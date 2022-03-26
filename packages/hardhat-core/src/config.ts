@@ -1,2 +1,4 @@
-export * from "./internal/core/config/config-env";
-export { HardhatUserConfig } from "./types";
+
+import "./internal/core/config/config-env";
+
+export type { HardhatUserConfig } from "./types";
